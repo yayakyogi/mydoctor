@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {TabBar} from '../../atom';
 import {colors} from '../../../utils';
 
@@ -45,16 +45,6 @@ const BottomNavigator = ({state, descriptors, navigation}) => {
             onLongPress={onLongPress}
             active={isFocused}
           />
-          // <TouchableOpacity
-          //   accessibilityRole="button"
-          //   accessibilityState={isFocused ? {selected: true} : {}}
-          //   accessibilityLabel={options.tabBarAccessibilityLabel}
-          //   testID={options.tabBarTestID}
-          //   onPress={onPress}
-          //   onLongPress={onLongPress}
-          //   style={{flex: 1}}>
-          //   <Text style={{color: isFocused ? '#673ab7' : '#222'}}>{label}</Text>
-          // </TouchableOpacity>
         );
       })}
     </View>

@@ -21,7 +21,7 @@ const UploadPhoto = ({navigation}) => {
           <Gap height={26} />
           <Text style={styles.name}>Shayna Melinda</Text>
           <Gap height={4} />
-          <Text style={styles.position}>Product Desginer</Text>
+          <Text style={styles.position}>Product Designer</Text>
         </View>
         <View>
           <Button title="Upload and Continue" />

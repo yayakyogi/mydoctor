@@ -1,13 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {ICBackDark} from '../../../assets';
+import {StyleSheet, TouchableOpacity} from 'react-native';
+import {ICBackDark, ICBackLight, ICChevronRight} from '../../../assets';
 
 const IconOnly = ({icon, onPress}) => {
   const Icon = () => {
     if (icon === 'ic_backDark') {
       return <ICBackDark />;
     } else if (icon === 'ic_backLight') {
-      return <ICBackDark />;
+      return <ICBackLight />;
+    } else if (icon === 'ic_chevronRight') {
+      return <ICChevronRight />;
     }
     return <ICBackDark />;
   };
@@ -19,5 +21,3 @@ const IconOnly = ({icon, onPress}) => {
 };
 
 export default IconOnly;
-
-const styles = StyleSheet.create({});

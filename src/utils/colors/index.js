@@ -1,5 +1,6 @@
 const mainColors = {
   green1: '#0BCAD4',
+  green2: '#EDFCFD',
   dark1: '#112340',
   dark2: '#495A75',
   grey1: '#7D8797',
@@ -8,7 +9,7 @@ const mainColors = {
 
 export const colors = {
   primary: mainColors.green1,
-  secondary: mainColors.grey1,
+  secondary: mainColors.dark1,
   white: 'white',
   black: 'black',
   text: {
@@ -29,4 +30,5 @@ export const colors = {
   },
   border: mainColors.grey2,
   buttonTab: mainColors.dark1,
+  card: mainColors.green2,
 };

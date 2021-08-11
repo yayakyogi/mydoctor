@@ -6,6 +6,10 @@ import UploadPhoto from './UploadPhoto';
 import Doctor from './Doctor';
 import Message from './Message';
 import Hospital from './Hospital';
+import UserProfile from './UserProfile';
+import EditProfile from './EditProfile';
+import ListDoctor from './ListDoctor';
+import DoctorProfile from './DoctorProfile';
 
 export {
   Splash,
@@ -16,4 +20,8 @@ export {
   Doctor,
   Message,
   Hospital,
+  UserProfile,
+  EditProfile,
+  ListDoctor,
+  DoctorProfile,
 };

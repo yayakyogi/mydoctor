@@ -1,3 +1,3 @@
-import ICBack from './ic_back.svg';
+import ICBackDark from './ic_backDark.svg';
 
-export {ICBack};
+export {ICBackDark};

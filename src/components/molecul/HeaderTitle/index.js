@@ -1,15 +1,14 @@
 import React from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {ICBack} from '../../../assets';
+import {StyleSheet, Text, View} from 'react-native';
+import {Gap, Button} from '../../atom';
+import {colors, fonts} from '../../../utils';
 
-const HeaderTitle = () => {
+const HeaderTitle = ({title, onPress}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
-        <ICBack />
-      </TouchableOpacity>
-      <Text style={styles.title}>HeaderTitle</Text>
-      <View />
+      <Button type="icon-only" icon="ic_backDark" onPress={onPress} />
+      <Text style={styles.title}>{title}</Text>
+      <Gap width={24} />
     </View>
   );
 };
@@ -21,8 +20,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: 70,
+    paddingVertical: 30,
     paddingHorizontal: 20,
   },
-  title: {fontSize: 20, fontFamily: 'Nunito-SemiBold'},
+  title: {
+    fontSize: 20,
+    fontFamily: fonts.primary.SMB,
+    color: colors.text.primary,
+  },
 });

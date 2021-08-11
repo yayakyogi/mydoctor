@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {colors, fonts} from '../../../utils';
 
 const Link = ({title, size, onPress, align}) => {
   return (
@@ -14,8 +15,9 @@ export default Link;
 const styles = StyleSheet.create({
   forgotPassword: (size, align) => ({
     fontSize: size,
+    fontFamily: fonts.primary.REG,
     textAlign: align,
-    color: '#7D8797',
+    color: colors.text.secondary,
     textDecorationLine: 'underline',
   }),
 });

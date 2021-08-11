@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {HeaderTitle, Gap, Button, TextInput} from '../../components';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <HeaderTitle />
+      <HeaderTitle title="Daftar Akun" onPress={() => navigation.goBack()} />
       <View style={styles.wrapper}>
         <TextInput label="Full Name" />
         <Gap height={24} />
@@ -25,5 +25,5 @@ export default SignUp;
 
 const styles = StyleSheet.create({
   container: {flex: 1, backgroundColor: 'white'},
-  wrapper: {padding: 40},
+  wrapper: {padding: 40, paddingTop: 0},
 });

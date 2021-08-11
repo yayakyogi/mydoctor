@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, ImageBackground} from 'react-native';
 import {ILLogo, ILBackground} from '../../assets';
 import {Button, Gap} from '../../components';
+import {colors, fonts} from '../../utils';
 
 const GetStarted = ({navigation}) => {
   return (
@@ -38,8 +39,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontFamily: 'Nunito-SemiBold',
-    color: 'white',
+    fontFamily: fonts.primary.SMB,
+    color: colors.white,
     marginTop: 91,
   },
 });

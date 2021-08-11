@@ -1,7 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import {ILLogo} from '../../assets';
 import {TextInput, Gap, Button, Link} from '../../components';
+import {colors, fonts} from '../../utils';
 
 const SignIn = ({navigation}) => {
   return (
@@ -30,16 +31,10 @@ const SignIn = ({navigation}) => {
 export default SignIn;
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: 'white', padding: 40},
+  container: {flex: 1, backgroundColor: colors.white, padding: 40},
   text: {
     fontSize: 25,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary.SMB,
     marginTop: 40,
-  },
-  createAccount: {
-    fontSize: 18,
-    color: '#7D8797',
-    textDecorationLine: 'underline',
-    textAlign: 'center',
   },
 });

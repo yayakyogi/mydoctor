@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, View, Image, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import {colors} from '../../utils';
 import {DMImgUser, ICBtnDelPhoto, ICBtnAddPhoto} from '../../assets';
 import {HeaderTitle, Gap, TextInput, Button} from '../../components';
@@ -17,7 +23,9 @@ const EditProfile = ({navigation}) => {
           <View style={styles.wrapperContent}>
             <View style={styles.wrapper}>
               <Image source={DMImgUser} style={styles.image} />
-              <ICBtnDelPhoto style={styles.btnAction} />
+              <TouchableOpacity style={styles.btnAction}>
+                <ICBtnDelPhoto />
+              </TouchableOpacity>
             </View>
           </View>
           <Gap height={26} />
